@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chimneys by John</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #222;
+}
+
+header {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+.logo {
+  width: 400px;
+  max-width: 95%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  margin-top: -55px;
+  font-size: 34px;
+}
+
+.subtext {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 6px;
+  padding: 12px 22px;
+  background: #b22222;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  background: #b22222;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+  margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" class="logo" alt="Chimneys by John Logo">
+
+  <h1>Chimney Repair & Masonry Services</h1>
+  <p class="subtext">Fast • Reliable • Local</p>
+
+  <a class="btn" href="#form">Get Estimate</a>
+  <a class="btn" href="tel:18623544338">Call Now</a>
+  <a class="btn" href="sms:18623544338">Text Now</a>
+</header>
+
+<section>
+  <h2>Serving Morris County, NJ</h2>
+
+  <div class="card">
+    We provide chimney repair and masonry services throughout Morris County including:
+    <br><br>
+    Morristown, Parsippany, Randolph, Rockaway, Dover, Denville,
+    Mount Olive, Madison, Chatham, Florham Park, Morris Plains,
+    Boonton, Butler, Kinnelon, Lincoln Park, Montville, Wharton.
+  </div>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+
+  <div class="card">Chimney Repair</div>
+  <div class="card">Masonry Work</div>
+  <div class="card">Brick Repair</div>
+  <div class="card">Waterproofing</div>
+  <div class="card">Chimney Cleaning</div>
+</section>
+
+<section>
+  <h2>Why Choose Chimneys by John</h2>
+
+  <div class="card">Local and trusted service</div>
+  <div class="card">Fast response</div>
+  <div class="card">Free estimates</div>
+  <div class="card">Easy call or text contact</div>
+</section>
+
+<section id="form">
+  <h2>Request an Estimate</h2>
+
+  <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="contact">
+
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address">
+
+    <select name="service">
+      <option value="">Service Needed</option>
+      <option>Chimney Repair</option>
+      <option>Masonry Work</option>
+      <option>Brick Repair</option>
+      <option>Waterproofing</option>
+      <option>Chimney Cleaning</option>
+      <option>Other</option>
+    </select>
+
+    <textarea name="message" placeholder="Tell us about the work you need"></textarea>
+
+    <button type="submit">Send Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Chimneys by John</p>
+</footer>
+
+</body>
+</html>
