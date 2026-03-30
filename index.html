@@ -1,163 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chimneys by John</title>
-<meta name="description" content="Chimney repair and masonry services in Morris County, NJ. Call or text Chimneys by John for an estimate.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John's Chimney Cleaning & Masonry Repair</title>
+  <meta name="description" content="John's Chimney Cleaning & Masonry Repair serving Morris County, NJ. Affordable rates, fast, reliable, and local service." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f5f5f5;
-  color: #222;
-}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
 
-header {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 0 20px 20px 20px;
-}
+    header {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 0 20px 25px 20px;
+    }
 
-.logo {
-  width: 400px;
-  max-width: 95%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+    .logo-wrap {
+      position: relative;
+      width: 430px;
+      max-width: 95%;
+      margin: 0 auto;
+    }
 
-h1 {
-  margin: 0;
-  margin-top: -55px;
-  font-size: 34px;
-}
+    .johns-script {
+      position: absolute;
+      top: 18px;
+      left: -5px;
+      font-family: 'Pacifico', cursive;
+      font-size: 38px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.55);
+      z-index: 2;
+    }
 
-.subtext {
-  font-size: 18px;
-  margin-top: 8px;
-  margin-bottom: 12px;
-}
+    .logo {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 
-.btn {
-  display: inline-block;
-  margin: 6px;
-  padding: 12px 22px;
-  background: #b22222;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
+    h1 {
+      margin: -45px 0 8px 0;
+      font-size: 34px;
+      line-height: 1.15;
+    }
 
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-}
+    .subtext {
+      font-size: 18px;
+      margin: 0 0 16px 0;
+    }
 
-h2 {
-  text-align: center;
-  margin-bottom: 25px;
-}
+    .btn {
+      display: inline-block;
+      margin: 6px;
+      padding: 12px 22px;
+      background: #b22222;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
 
-.card {
-  background: white;
-  padding: 20px;
-  margin: 12px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
+    .btn:hover {
+      background: #8f1b1b;
+    }
 
-.contact-box {
-  background: white;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  text-align: center;
-}
+    section {
+      max-width: 950px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-.contact-box p {
-  margin: 12px 0;
-  font-size: 18px;
-}
+    h2 {
+      text-align: center;
+      margin: 0 0 25px 0;
+      font-size: 30px;
+    }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  color: white;
-  margin-top: 30px;
-}
-</style>
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 12px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .contact-box {
+      background: white;
+      padding: 28px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+      font-size: 18px;
+    }
+
+    .towns {
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+      .johns-script {
+        font-size: 30px;
+        top: 10px;
+        left: 5px;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin-top: -28px;
+      }
+
+      .subtext {
+        font-size: 16px;
+      }
+
+      .logo-wrap {
+        width: 340px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-  <img src="logo.png" class="logo" alt="Chimneys by John Logo">
-
-  <h1>Chimney Repair & Masonry Services</h1>
-  <p class="subtext">Fast • Reliable • Local</p>
-
-  <a class="btn" href="#contact">Get Estimate</a>
-  <a class="btn" href="tel:18623544338">Call Now</a>
-  <a class="btn" href="sms:18623544338">Text Now</a>
-</header>
-
-<section>
-  <h2>Serving Morris County, NJ</h2>
-
-  <div class="card">
-    We provide chimney repair and masonry services throughout Morris County including:
-    <br><br>
-    Morristown, Parsippany, Randolph, Rockaway, Dover, Denville,
-    Mount Olive, Madison, Chatham, Florham Park, Morris Plains,
-    Boonton, Butler, Kinnelon, Lincoln Park, Montville, Wharton.
-  </div>
-</section>
-
-<section>
-  <h2>Our Services</h2>
-
-  <div class="card">Chimney Repair</div>
-  <div class="card">Masonry Work</div>
-  <div class="card">Brick Repair</div>
-  <div class="card">Waterproofing</div>
-  <div class="card">Chimney Cleaning</div>
-</section>
-
-<section>
-  <h2>Why Choose Chimneys by John</h2>
-
-  <div class="card">Local and trusted service</div>
-  <div class="card">Fast response</div>
-  <div class="card">Free estimates</div>
-  <div class="card">Easy call or text contact</div>
-</section>
-
-<section id="contact">
-  <h2>Get an Estimate</h2>
-
-  <div class="contact-box">
-    <p><strong>Call or text now to request an estimate.</strong></p>
-    <p>Phone: <a href="tel:18623544338">(862) 354-4338</a></p>
-    <p>Text: <a href="sms:18623544338">(862) 354-4338</a></p>
-    <p>Serving Morris County and surrounding areas.</p>
-
-    <div style="margin-top:20px;">
-      <a class="btn" href="tel:18623544338">Call Now</a>
-      <a class="btn" href="sms:18623544338">Text Now</a>
+  <header>
+    <div class="logo-wrap">
+      <div class="johns-script">John's</div>
+      <img src="logo.png" class="logo" alt="John's chimney logo">
     </div>
-  </div>
-</section>
 
-<footer>
-  <p>© 2026 Chimneys by John</p>
-</footer>
+    <h1>Chimney Cleaning & Masonry Repair</h1>
+    <p class="subtext">Affordable Rates • Fast • Reliable • Local</p>
+
+    <a class="btn" href="#contact">Get Estimate</a>
+    <a class="btn" href="tel:18623544338">Call Now</a>
+    <a class="btn" href="sms:18623544338">Text Now</a>
+  </header>
+
+  <section>
+    <h2>Serving Morris County, NJ</h2>
+    <div class="card towns">
+      We provide chimney cleaning and masonry repair throughout Morris County including:<br><br>
+      Morristown, Parsippany, Randolph, Rockaway, Dover, Denville, Mount Olive, Madison, Chatham, Florham Park, Morris Plains, Boonton, Butler, Kinnelon, Lincoln Park, Montville, and Wharton.
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="card">Chimney Cleaning</div>
+    <div class="card">Masonry Repair</div>
+    <div class="card">Brick Repair</div>
+    <div class="card">Waterproofing</div>
+    <div class="card">General Chimney Service</div>
+  </section>
+
+  <section>
+    <h2>Why Choose John's</h2>
+    <div class="card">Affordable rates</div>
+    <div class="card">Fast response</div>
+    <div class="card">Reliable local service</div>
+    <div class="card">Easy call or text contact</div>
+  </section>
+
+  <section id="contact">
+    <h2>Get an Estimate</h2>
+    <div class="contact-box">
+      <p><strong>Call or text now to get started.</strong></p>
+      <p>Phone: <a href="tel:18623544338">(862) 354-4338</a></p>
+      <p>Text: <a href="sms:18623544338">(862) 354-4338</a></p>
+      <p>Serving Morris County and surrounding areas.</p>
+
+      <div style="margin-top:20px;">
+        <a class="btn" href="tel:18623544338">Call Now</a>
+        <a class="btn" href="sms:18623544338">Text Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 John's Chimney Cleaning & Masonry Repair</p>
+  </footer>
 
 </body>
 </html>
