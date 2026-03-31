@@ -22,7 +22,7 @@
       background: #222;
       color: white;
       text-align: center;
-      padding: 10px 20px 25px;
+      padding: 0 20px 25px 20px;
     }
 
     .logo {
@@ -90,14 +90,25 @@
       gap: 15px;
     }
 
+    .gallery-item {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
     .gallery img {
       width: 100%;
       height: 260px;
       object-fit: cover;
-      border-radius: 8px;
-      background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       display: block;
+    }
+
+    .caption {
+      padding: 10px 12px;
+      font-weight: bold;
+      text-align: center;
+      background: white;
     }
 
     .contact-box {
@@ -179,20 +190,75 @@
   <section>
     <h2>Our Work</h2>
     <div class="gallery">
-      <img src="AfterCoolTouchPaint.jpg" alt="After Cool Touch Paint work">
-      <img src="BeforeCoolTouchPaint.jpg" alt="Before Cool Touch Paint work">
-      <img src="chimny-crown1.jpg" alt="Chimney crown repair">
-      <img src="crown2.jpg" alt="Chimney crown work">
-      <img src="driveway1.jpg" alt="Driveway masonry work">
-      <img src="driveway2.jpg" alt="Driveway masonry project">
-      <img src="Firepit1.jpg" alt="Fire pit masonry work">
-      <img src="hearth.jpg" alt="Hearth masonry work">
-      <img src="insert1.jpg" alt="Chimney insert work">
-      <img src="patio1.jpg" alt="Patio masonry work">
-      <img src="patio2.jpg" alt="Patio project">
-      <img src="walkway1.jpg" alt="Walkway masonry work">
-      <img src="walkway2.jpg" alt="Walkway project">
-      <img src="walkway3.jpg" alt="Walkway repair">
+      <div class="gallery-item">
+        <img src="AfterCoolTouchPaint.jpg" alt="Cool Touch Paint After">
+        <div class="caption">Cool Touch Paint After</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="BeforeCoolTouchPaint.jpg" alt="Cool Touch Paint Before">
+        <div class="caption">Cool Touch Paint Before</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="chimny-crown1.jpg" alt="Chimney Crown Repair">
+        <div class="caption">Chimney Crown Repair</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="crown2.jpg" alt="Chimney Crown Work">
+        <div class="caption">Chimney Crown Work</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="driveway1.jpg" alt="Driveway Masonry Work">
+        <div class="caption">Driveway Masonry Work</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="driveway2.jpg" alt="Driveway Masonry Project">
+        <div class="caption">Driveway Masonry Project</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Firepit1.jpg" alt="Fire Pit Masonry Work">
+        <div class="caption">Fire Pit Masonry Work</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="hearth.jpg" alt="Hearth Masonry Work">
+        <div class="caption">Hearth Masonry Work</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="insert1.jpg" alt="Chimney Insert Work">
+        <div class="caption">Chimney Insert Work</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="patio1.jpg" alt="Patio Masonry Work">
+        <div class="caption">Patio Masonry Work</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="patio2.jpg" alt="Patio Project">
+        <div class="caption">Patio Project</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="walkway1.jpg" alt="Walkway Masonry Work">
+        <div class="caption">Walkway Masonry Work</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="walkway2.jpg" alt="Walkway Project">
+        <div class="caption">Walkway Project</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="walkway3.jpg" alt="Walkway Repair">
+        <div class="caption">Walkway Repair</div>
+      </div>
     </div>
   </section>
 
