@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -18,36 +18,29 @@
       color: #222;
     }
 
-header {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 0 20px 20px 20px;
-}
+    header {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 0 20px 25px 20px;
+    }
 
-.logo {
-  width: 420px;
-  max-width: 95%;
-  display: block;
-  margin: 0 auto -40px auto;
-  transform: translateY(120px);
-}
+    .logo {
+      width: 420px;
+      max-width: 95%;
+      display: block;
+      margin: 0 auto -20px auto;
+    }
 
-.johns {
-  font-family: 'Allura', cursive !important;
-  font-size: 100px !important;
-  font-weight: normal;
-  line-height: 1;
-  margin: 70px 0 10px 0;
-  color: white;
-  display: block;
-}
-    h1.johns {
-  font-family: 'Pacifico', cursive !important;
-}
-    h1.johns {
-  font-size: 100px !important;
-}
+    .johns {
+      font-family: 'Allura', cursive !important;
+      font-size: 110px !important;
+      font-weight: normal;
+      line-height: 1;
+      margin: 0;
+      color: white;
+      display: block;
+    }
 
     h1 {
       margin: 0 0 10px 0;
@@ -72,6 +65,14 @@ header {
 
     .btn:hover {
       background: #8f1b1b;
+    }
+
+    .btn-primary {
+      background: #ff6600;
+    }
+
+    .btn-primary:hover {
+      background: #e55b00;
     }
 
     section {
@@ -121,17 +122,51 @@ header {
       background: white;
     }
 
-    .contact-box {
+    .form-box {
       background: white;
       padding: 28px;
       border-radius: 8px;
-      text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
-    .contact-box p {
-      margin: 12px 0;
-      font-size: 18px;
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background: #b22222;
+      color: white;
+      border: none;
+      padding: 14px 22px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #8f1b1b;
+    }
+
+    .quick-contact {
+      text-align: center;
+      margin-top: 20px;
     }
 
     footer {
@@ -148,7 +183,7 @@ header {
       }
 
       .johns {
-        font-size: 48px;
+        font-size: 82px !important;
       }
 
       h1 {
@@ -169,17 +204,14 @@ header {
 
   <header>
     <img src="logo.png" class="logo" alt="John's chimney logo">
-
-   <h1 class="johns">John's</h1>
-
+    <h1 class="johns">John's</h1>
     <h1>Chimney Cleaning & Masonry Repair</h1>
-
     <p class="subtext">Affordable Rates • Fast • Reliable • Local</p>
 
-    <a class="btn" href="#contact">Get Estimate</a>
-<a class="btn btn-primary" href="#contact">Schedule Chimney Cleaning</a>
-<a class="btn" href="tel:18623544338">Call Now</a>
-<a class="btn" href="sms:18623544338">Text Now</a>
+    <a class="btn" href="#estimate-form">Get Estimate</a>
+    <a class="btn btn-primary" href="#cleaning-form">Schedule Chimney Cleaning</a>
+    <a class="btn" href="tel:18623544338">Call Now</a>
+    <a class="btn" href="sms:18623544338">Text Now</a>
   </header>
 
   <section>
@@ -273,18 +305,55 @@ header {
     </div>
   </section>
 
-  <section id="contact">
+  <section id="estimate-form">
     <h2>Get an Estimate</h2>
-    <div class="contact-box">
-      <p><strong>Call or text now to get started.</strong></p>
-      <p>Phone: <a href="tel:18623544338">(862) 354-4338</a></p>
-      <p>Text: <a href="sms:18623544338">(862) 354-4338</a></p>
-      <p>Serving Morris County and surrounding areas.</p>
+    <div class="form-box">
+      <form action="https://formspree.io/f/meepgyvk" method="POST">
+        <input type="hidden" name="form_type" value="estimate">
 
-      <div style="margin-top:20px;">
-        <a class="btn" href="tel:18623544338">Call Now</a>
-        <a class="btn" href="sms:18623544338">Text Now</a>
-      </div>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="address" placeholder="Property Address">
+
+        <select name="service_needed" required>
+          <option value="">Service Needed</option>
+          <option>Chimney Cleaning</option>
+          <option>Masonry Repair</option>
+          <option>Brick Repair</option>
+          <option>Waterproofing</option>
+          <option>Patio / Walkway / Driveway</option>
+          <option>Other</option>
+        </select>
+
+        <textarea name="message" placeholder="Tell us about the work you need" required></textarea>
+
+        <button type="submit" class="submit-btn">Send Estimate Request</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="cleaning-form">
+    <h2>Schedule Chimney Cleaning</h2>
+    <div class="form-box">
+      <form action="https://formspree.io/f/mreoqnrd" method="POST">
+        <input type="hidden" name="form_type" value="schedule_chimney_cleaning">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="address" placeholder="Property Address" required>
+        <input type="text" name="preferred_day_time" placeholder="Preferred Day / Time">
+
+        <textarea name="message" placeholder="Anything we should know before the cleaning?"></textarea>
+
+        <button type="submit" class="submit-btn">Schedule Cleaning</button>
+      </form>
+    </div>
+
+    <div class="quick-contact">
+      <a class="btn" href="tel:18623544338">Call Now</a>
+      <a class="btn" href="sms:18623544338">Text Now</a>
     </div>
   </section>
 
